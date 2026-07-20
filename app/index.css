@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- Fond de l'application --- */
+  --color-dj-bg: #F9FAF6;
+  --color-dj-green-50: #EEF3EC;
+  --color-dj-green-100: #DCE7D5;
+  --color-dj-green-600: #4A7055;
+  --color-dj-green-800: #2F5233;
+  --color-dj-green-950: #1A2E1D;
+  --color-dj-terra-100: #F6D6CD;
+  --color-dj-terra-500: #E07A5F;
+  --color-dj-terra-700: #B55A42;
+}

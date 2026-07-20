@@ -1,0 +1,13 @@
+export function meta() {
+  return [
+    { title: "Settings | Djardin" },
+  ];
+}
+
+export default function Settings() {
+  return (
+    <div>
+      <h1>Settings</h1>
+    </div>
+  );
+}
