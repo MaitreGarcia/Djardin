@@ -3,6 +3,7 @@ import { Links, Meta, Outlet } from "react-router/internal/react-server-client";
 import Navigation from "./widgets/Navigation";
 import Footer from "./widgets/Footer";
 
+import styleApp from "app/index.css?url";
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,7 +15,7 @@ export const meta: MetaFunction = () => {
 
 export const links: LinksFunction = () => {
   return [
-    { rel: "stylesheet", href: "app/index.css" },
+    { rel: "stylesheet", href: styleApp },
   ];
 };
 
