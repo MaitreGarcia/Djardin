@@ -12,3 +12,43 @@
   --color-dj-terra-500: #E07A5F;
   --color-dj-terra-700: #B55A42;
 }
+
+@layer {
+  * {
+    font-family: "3ds", sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.8px;
+  }
+
+  h2 {
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+}
