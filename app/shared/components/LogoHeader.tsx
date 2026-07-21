@@ -1,4 +1,4 @@
-import logo from "../assets/djardin_logo.svg?url";
+import logo from "@/assets/djardin_logo.svg?url";
 
 export default function LogoHeader() {
   return (

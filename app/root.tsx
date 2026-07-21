@@ -28,7 +28,7 @@ export default function Root() {
       </head>
       <body className="bg-dj-green-50 flex flex-row relative gap-2">
         <Navigation />
-        <div className="flex flex-col gap-5 relative grow p-2">
+        <div className="flex flex-col gap-5 relative grow p-2 overflow-auto">
           <Outlet />
           <Footer />
         </div>
