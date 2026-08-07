@@ -1,6 +1,7 @@
 import { Flowers } from "../entities/flowers/Flower";
 import { fetchFlowers } from "../shared/api/flowers";
 import LogoHeader from "../shared/components/LogoHeader";
+import { FlowerFilter } from "../widgets/Filters";
 
 export function meta() {
   return [
@@ -17,6 +18,7 @@ export default function Home({ loaderData }: any) {
   return (
     <main className="flex flex-col gap-2">
       <LogoHeader />
+      <FlowerFilter />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2">
         <Flowers flowers={loaderData as Flower[]} />
       </div>

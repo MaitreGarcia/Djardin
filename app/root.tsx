@@ -9,13 +9,12 @@ export const meta: MetaFunction = () => {
   return [
     { title: "Djardin - My Fabulous Garden" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
-    { charSet: "utf-8" },
   ];
 };
 
 export const links: LinksFunction = () => {
   return [
-    { rel: "stylesheet", href: stylesHref },
+    { rel: "stylesheet", href: stylesHref }
   ];
 };
 
@@ -25,6 +24,7 @@ export default function Root() {
       <head>
         <Meta />
         <Links />
+        <meta charSet="utf-8"></meta>
       </head>
       <body className="bg-dj-green-50 flex flex-row relative gap-2">
         <Navigation />

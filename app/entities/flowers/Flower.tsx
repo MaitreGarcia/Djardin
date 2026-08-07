@@ -1,5 +1,29 @@
 import { Label } from "../../shared/components/Label"
 
+export function FlowerLabel({ flower }: { flower: Flower }) {
+  if (flower.wateringState === 'dry') {
+    return (
+      <Label>
+        Dry
+      </Label>
+    )
+  }
+  if (flower.wateringState === 'drying') {
+    return (
+      <Label>
+        Drying
+      </Label>
+    )
+  }
+
+  return (
+    <Label>
+      Wet
+    </Label>
+  )
+}
+
+
 export function Flower({ flower }: { flower: Flower }) {
   return (
     <div className="w-full rounded-xl p-2 bg-white flex flex-col gap-2">
@@ -7,9 +31,7 @@ export function Flower({ flower }: { flower: Flower }) {
       <h5 className="text-xl font-semibold">
         {flower.name}
       </h5>
-      <Label>
-        This is a label
-      </Label>
+      <FlowerLabel flower={flower} />
     </div>
   )
 }
